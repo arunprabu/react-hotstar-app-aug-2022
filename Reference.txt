@@ -1,0 +1,129 @@
+Browser 
+--
+  HTML Renderer + CSS Parser + JS Engine 
+
+
+
+ECMAScript 
+---
+  * standard
+  * grammar 
+  * Implementations:  JS, ActionScript, Google AppScript 
+
+--
+
+NodeJS Ecosystem
+--
+  
+  1. Project Dependencies 
+      * some packages are needed for the project's functionality to work 
+      * will be part of prod build 
+
+      npm i dropzone 
+      npm i dropzone --save 
+      npm i dropzone -S 
+
+      will be tracked under in package.json file 
+
+      "dependencies": {
+        "dropzone": "6.0.0"
+      }
+
+  2. Development Dependencies
+      * some packages are needed for the project to be developed 
+      * needed during the time of development for better, smoother dev workflow
+      * will never be part of prod build 
+
+      npm i webpack --save-dev
+      npm i webpack -D
+
+      will be tracked under in package.json file 
+
+      "devDependencies": {
+        "webpack": "6.0.0"
+      }
+
+
+
+
+Webapps
+--
+  1. Server Side Rendering (SSR) Apps / Traditional Webapps 
+      * pages will refresh 
+
+      Arch 
+      ---
+        1 Server (Front End + BackEnd + DB Queries)
+          Resp: HTML, CSS, JS with Data 
+
+      Codebase
+      ---
+        Front End (HTML, CSS, JS) + BackEnd (Java/DotNet/PHP) + DB Queries (SQL)
+
+      Adv 
+      ---
+        1. search engine friendly 
+
+      Disadv
+      ---
+        1. one server has to do the heavy lifting 
+        2. slower webapps 
+        3. more bandwidth consumption
+        4. more expensive
+        5. chaotic codebase 
+
+
+  2. Client Side Rendering (CSR) Apps  = SPA + REST API 
+      * Pages will not refresh 
+
+      Arch 
+      --
+        2 Servers
+          1 Server (Front End App)               - 8080
+            Resp: HTML, CSS, JS -- wait for data 
+
+          1 Server (Back End App + DB Queries)   - 8081 
+            Resp: Data (JSON)
+
+      Codebase
+      --
+        Front End App (HTML, CSS, JS) 
+          a.k.a Single Page App (SPA)
+        
+        Back End App (Java/DotNet/PHP/Python/Ruby/Perl/NodeJS + SQL/NoSQL) 
+          a.k.a REST API 
+
+      Adv 
+      ---
+        1. Workload is shared between two servers 
+        2. Faster Webapps 
+        3. Less bandwidth consumption 
+        4. Less Expensive 
+        5. Organized Codebase 
+
+
+      Disadv
+      ---
+        1. Initial Loading Time will be longer 
+        2. Not Search Engine Friendly 
+
+---
+Single Page App 
+---
+  * SPA Library / Framework 
+      React JS (Library), 
+      Angular (Framework),
+      VueJS (Framework)
+      
+  SPA Characteristics
+  ---
+    1. Page should not refresh
+    2. URL should change
+    3. History should be maintained w/o page refresh
+    4. Header and Footer should be intact. Should not be loaded again n again 
+    5. In between header and footer - page should be updated 
+    6. Active menu should be set 
+    7. Page Title should be changed 
+
+
+
