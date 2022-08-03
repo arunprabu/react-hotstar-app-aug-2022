@@ -1,7 +1,7 @@
 // Ideal comp for your layout
 import './App.css';
 import Header from './components/Header/Header';
-
+import Footer from './components/Footer/Footer';
 
 // App Component 
 function App() {
@@ -11,10 +11,11 @@ function App() {
     <div>
       <Header />
 
-      <div>
+      <div className='container mt-5'>
         <h1>Success!</h1>
       </div>
 
+      <Footer />
     </div>
   );
 }

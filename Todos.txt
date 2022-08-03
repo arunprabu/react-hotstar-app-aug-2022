@@ -1,0 +1,1 @@
+1. TODO: Learn about integrating bootstrap properly in react project
