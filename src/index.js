@@ -1,13 +1,14 @@
 import React from 'react'; // react core library 
 import ReactDOM from 'react-dom'; // React package for working with the DOM.
+
+// custom imports
 import './index.css';
-import App from './App';
+import App from './App'; // Importing App Component
 import reportWebVitals from './reportWebVitals';
 
+// App Comp is rendered inside div with id root 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <App />
   , 
   document.getElementById('root')
 );
