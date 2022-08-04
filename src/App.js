@@ -2,6 +2,7 @@
 import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
 
 // App Component 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <Header />
 
       <div className='container mt-5'>
-        <h1>Success!</h1>
+        <Home />
       </div>
 
       <Footer />

@@ -3,11 +3,13 @@ import React from 'react';
 import Menu from '../Menu/Menu';
 
 const Footer = function(){
+  const copyrightYear = 2022;
+
   return(
     <footer className='text-center'>
       <hr />
       <Menu />
-      <p>Copyright 2022 | Arun</p>
+      <p>Copyright { copyrightYear } | Arun</p>
     </footer>
   )
 }

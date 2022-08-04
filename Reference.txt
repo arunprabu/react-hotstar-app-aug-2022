@@ -138,9 +138,9 @@ Components
     1. Functional Components
         * were called (before react v 16.8) as stateless components/ dumb components/presentational components 
 
-        1.1 Functional Components with Named Functions [DONE]
-        1.2 Functional Components with Anonymous Functions [DONE] 
-        1.3 Functional Components with Arrow Functions [DONE]
+        1.1 Functional Components with Named Functions 
+        1.2 Functional Components with Anonymous Functions 
+        1.3 Functional Components with Arrow Functions [RECOMMENDED]
         
     2. Class Components 
         * were called (before react v 16.8) as stateful components/ smart components/ containers 
@@ -152,5 +152,22 @@ JSX
   * all elements should be either self-closed or separately closed
   * you can't have multiple children elements
   * html attribute class should become className
+
+
+Cross Component Communication 
+--
+  1. Parent to Child Component Communication [DONE]
+      Using Props 
+
+  2. Child to Parent Component Communication [TODO]
+      Using Props, States and also Events and callback (Render Props) 
+
+  3. Any to Any Component Communication [LATER]
+      
+
+
+
+Props 
+--
 
 
