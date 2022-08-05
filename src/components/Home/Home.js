@@ -1,4 +1,6 @@
 import React from 'react'
+import RecentMovieList from '../../containers/RecentMovieList/RecentMovieList';
+import TrendingShowList from '../../containers/TrendingShowList/TrendingShowList';
 import Program from './Program/Program';
 
 const Home = () => {
@@ -54,8 +56,12 @@ const Home = () => {
 
       <hr/>
 
-      <h2>Recent Movie List | Demo of States, Props, Events in a Class Comp</h2>
-      
+      <h2>Recent Movie List | Demo of State, Props, Events in a Class Comp</h2>
+      <RecentMovieList />
+
+      <h2>Trending Show List | Demo of State, Event with param, List and Keys</h2>
+      <TrendingShowList />
+
     </div>
   )
 }

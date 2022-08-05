@@ -163,7 +163,7 @@ Cross Component Communication
       Using Props, States and also Events and callback (Render Props) 
 
   3. Any to Any Component Communication [LATER]
-      
+
 
 
 
@@ -171,3 +171,21 @@ Props
 --
 
 
+Project Structure
+--
+  src/
+    components/
+      Header/
+      Footer/
+        Footer.js 
+        Footer.test.js 
+        Footer.css 
+      Menu/
+      Home/
+        Home.js 
+        Program/
+          Program.js 
+    containers/
+      RecentMovieList/
+        RecentMovieList.js 
+      
