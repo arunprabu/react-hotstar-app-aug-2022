@@ -1,8 +1,11 @@
 1. TODO: Learn about integrating bootstrap properly in react project
 2. TODO: lists and keys in RecentMovieList comp and also handle event for add to watchlist properly
-3. Active menu should be set in routing [TODO]
-4. Page Title should be changed in routing [TODO]
-
+3. TODO: Active menu should be set in routing 
+4. TODO: Page Title should be changed in routing 
+5. TODO: implement 404 
+6. TODO: Complete RecentMovieList with Child Comp 
+7. TODO: Work on Render props and child to parent comp commn 
+  in RecentMovieList and its' child comp 
 
 
 
