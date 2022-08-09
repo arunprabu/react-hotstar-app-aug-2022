@@ -64,6 +64,7 @@ class LifeCycleDemo extends Component {
   }
 
   render() {
+    // NEVER EVER UPDATE STATE HERE
     console.log('********************** 2 / 5. Inside Render **********************');
     return (
       <div>

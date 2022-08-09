@@ -135,7 +135,7 @@ Components
 
   Types
   ---
-    1. Functional Components
+    1. Functional Components [RECOMMENDED]
         * were called (before react v 16.8) as stateless components/ dumb components/presentational components 
 
         1.1 Functional Components with Named Functions 
