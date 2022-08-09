@@ -1,7 +1,9 @@
 import React from 'react'
+import MyProfile from '../../containers/MyProfile/MyProfile';
 import RecentMovieList from '../../containers/RecentMovieList/RecentMovieList';
 import TrendingShowList from '../../containers/TrendingShowList/TrendingShowList';
 import Program from './Program/Program';
+import Subscription from './Subscription/Subscription';
 
 const Home = () => {
   const appName = 'Hotstar';
@@ -59,8 +61,17 @@ const Home = () => {
       <h2>Recent Movie List | Demo of State, Props, Events in a Class Comp</h2>
       <RecentMovieList />
 
-      <h2>Trending Show List | Demo of State, Event with param, List and Keys</h2>
+      <hr/>
+      <h2>Trending Show List | Demo of State, Event with param, Conditionals, List and Keys</h2>
       <TrendingShowList />
+
+      <hr/>
+      <h2>Subscription | Styles Demo</h2>
+      <Subscription />
+
+      <hr/>
+      <h2>MyProfile | Two Way Binding Demo</h2>
+      <MyProfile />
 
     </div>
   )

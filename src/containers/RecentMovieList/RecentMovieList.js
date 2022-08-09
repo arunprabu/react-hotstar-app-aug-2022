@@ -53,6 +53,7 @@ class RecentMovieList extends React.Component {
 
   // comp defn needs render method - must 
   render() {
+    
     console.log('Inside Render');
     // return JSX from render method is mandatory
     return (

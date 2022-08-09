@@ -163,6 +163,7 @@ Cross Component Communication
       Using Props, States and also Events and callback (Render Props) 
 
   3. Any to Any Component Communication [LATER]
+      Using Redux / Hooks (Context API)
 
 
 
@@ -189,3 +190,21 @@ Project Structure
       RecentMovieList/
         RecentMovieList.js 
       
+Agenda
+--
+  Lifecycle hooks 
+  Routing 
+
+  HOC 
+  Advanced Topics 
+    Fragment
+    Strict Mode 
+    
+  AJAX Call
+  Hooks 
+  Unit Testing 
+
+  Redux 
+  --
+  
+  
