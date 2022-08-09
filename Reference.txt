@@ -117,13 +117,13 @@ Single Page App
       
   SPA Characteristics
   ---
-    1. Page should not refresh
-    2. URL should change
-    3. History should be maintained w/o page refresh
-    4. Header and Footer should be intact. Should not be loaded again n again 
-    5. In between header and footer - page should be updated 
-    6. Active menu should be set 
-    7. Page Title should be changed 
+    1. Page should not refresh [DONE]
+    2. URL should change [DONE]
+    3. History should be maintained w/o page refresh [DONE]
+    4. Header and Footer should be intact. Should not be loaded again n again  [DONE]
+    5. In between header and footer - page should be updated  [DONE]
+    6. Active menu should be set [TODO]
+    7. Page Title should be changed [TODO]
 
 
 
@@ -189,11 +189,45 @@ Project Structure
     containers/
       RecentMovieList/
         RecentMovieList.js 
-      
+  
+  
+  Routing in React using react-router-dom@6.2.1
+--
+   npm i react-router-dom@6.2.1
+
+
+Step 1: identify URLS 
+  Home  - localhost:3000/
+  Concepts  - localhost:3000/concepts
+  About  - localhost:3000/about
+
+Step 2: 
+---
+  Identify the matching comp for the URL's 
+    localhost:3000/   -- Home Comp
+    localhost:3000/concepts   -- Concepts Comp
+    localhost:3000/about   -- About Comp
+
+Step 3: 
+--
+  Let's setup the href in Menu comp properly for each Menu
+  
+Step 4: 
+--
+  Config the URL's in App.js in between header and footer 
+
+Step 5: 
+--
+  Check the app. Click the links. Comp's will be loaded in b/w header and footer.
+
+  Let's stop the page refresh
+
+  Replace <a href=''> with <NavLink to=''>
+
+    
 Agenda
 --
-  Lifecycle hooks 
-  Routing 
+ 
   HOC 
 
   Advanced Topics 
@@ -206,5 +240,3 @@ Agenda
 
   Redux 
   --
-  
-  

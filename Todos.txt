@@ -1,6 +1,7 @@
 1. TODO: Learn about integrating bootstrap properly in react project
 2. TODO: lists and keys in RecentMovieList comp and also handle event for add to watchlist properly
-
+3. Active menu should be set in routing [TODO]
+4. Page Title should be changed in routing [TODO]
 
 
 
