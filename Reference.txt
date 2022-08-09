@@ -194,8 +194,8 @@ Agenda
 --
   Lifecycle hooks 
   Routing 
-
   HOC 
+
   Advanced Topics 
     Fragment
     Strict Mode 

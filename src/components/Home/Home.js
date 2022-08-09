@@ -1,4 +1,5 @@
 import React from 'react'
+import LifeCycleDemo from '../../containers/LifeCycleDemo/LifeCycleDemo';
 import MyProfile from '../../containers/MyProfile/MyProfile';
 import RecentMovieList from '../../containers/RecentMovieList/RecentMovieList';
 import TrendingShowList from '../../containers/TrendingShowList/TrendingShowList';
@@ -72,6 +73,10 @@ const Home = () => {
       <hr/>
       <h2>MyProfile | Two Way Binding Demo</h2>
       <MyProfile />
+
+      <hr />
+      <h2>LifeCycle Hooks Demo</h2>
+      <LifeCycleDemo/>
 
     </div>
   )

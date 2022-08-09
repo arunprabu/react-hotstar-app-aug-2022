@@ -30,7 +30,7 @@ class TrendingShowList extends Component {
 
     this.setState({
       trendingShowsList: dupTrendingShows
-    })
+    });
   }
 
   render() {
