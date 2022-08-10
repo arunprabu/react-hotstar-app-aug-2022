@@ -2,3 +2,8 @@
   the styles from here can be used in app comp and also in its' descendents 
 */
 
+.hocStyle{
+  border: solid 1px red;
+  background: yellow;
+  height: 200px;
+}

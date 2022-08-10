@@ -1,4 +1,4 @@
-import React from 'react'; // react core library 
+import React, {StrictMode} from 'react'; // react core library 
 import ReactDOM from 'react-dom'; // React package for working with the DOM.
 
 // custom imports
@@ -8,7 +8,9 @@ import reportWebVitals from './reportWebVitals';
 
 // App Comp is rendered inside div with id root 
 ReactDOM.render(
-  <App />
+  <StrictMode>
+    <App />
+  </StrictMode>
   , 
   document.getElementById('root')
 );

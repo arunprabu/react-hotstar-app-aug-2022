@@ -14,6 +14,7 @@ class LifeCycleDemo extends Component {
       featureName: ''
     }
 
+    this.myTimeout = null;
   }
   
   // lifecycle hooks
@@ -25,7 +26,7 @@ class LifeCycleDemo extends Component {
     // ideal place for you to make ajax calls
     // upon successful/failure ajax call -- you can UPDATE state here using this.setState()
     // mocking ajax calls
-    setTimeout( () => {
+    this.myTimeout = setTimeout( () => {
       // assuming that we get successful resp after 4 sec from the rest api backend 
       // we need to update the state 
       this.setState({
@@ -61,13 +62,14 @@ class LifeCycleDemo extends Component {
   componentWillUnmount() {
     console.log('********************** 7. Inside componentWillUnmount **********************');
     // when the comp goes out of the view
+    clearTimeout(this.myTimeout);
   }
 
   render() {
     // NEVER EVER UPDATE STATE HERE
     console.log('********************** 2 / 5. Inside Render **********************');
     return (
-      <div>
+      <>
         { this.state.isLoading? 
           <div className="spinner-border" role="status">
             <span className="visually-hidden">Loading...</span>
@@ -80,7 +82,7 @@ class LifeCycleDemo extends Component {
           </div>
         }
         
-      </div>
+      </>
     )
   }
 }

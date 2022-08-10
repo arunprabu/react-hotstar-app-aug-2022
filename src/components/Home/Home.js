@@ -3,6 +3,7 @@ import LifeCycleDemo from '../../containers/LifeCycleDemo/LifeCycleDemo';
 import MyProfile from '../../containers/MyProfile/MyProfile';
 import RecentMovieList from '../../containers/RecentMovieList/RecentMovieList';
 import TrendingShowList from '../../containers/TrendingShowList/TrendingShowList';
+import LastLogin from '../LastLogin/LastLogin';
 import Program from './Program/Program';
 import Subscription from './Subscription/Subscription';
 
@@ -10,7 +11,7 @@ const Home = () => {
   const appName = 'Hotstar';
 
   return (
-    <div>
+    <>
       <div className="px-4 py-5 my-5 text-center">
         <img
           className="d-block mx-auto mb-4"
@@ -78,7 +79,16 @@ const Home = () => {
       <h2>LifeCycle Hooks Demo</h2>
       <LifeCycleDemo/>
 
-    </div>
+      <hr/>
+      <h2>Last Login</h2>
+      <LastLogin>
+        <p>Last Login 1: </p>
+      </LastLogin>
+
+      <LastLogin>
+        <p>Last Login 2: </p>
+      </LastLogin>
+    </>
   )
 }
 

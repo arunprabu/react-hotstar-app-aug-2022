@@ -226,17 +226,13 @@ Step 5:
 
     
 Agenda
---
- 
-  HOC 
+-- 
+  HOC (40 min)
 
-  Advanced Topics 
-    Fragment
-    Strict Mode 
-    
-  AJAX Call
-  Hooks 
-  Unit Testing 
+  AJAX Call (20 mins)
 
-  Redux 
+  Hooks (3 hours)
+  Unit Testing (2-2.5 hours)
+
+  Redux (1 hour)
   --
