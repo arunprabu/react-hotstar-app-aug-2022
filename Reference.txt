@@ -227,9 +227,6 @@ Step 5:
     
 Agenda
 -- 
-  HOC (40 min)
-
-  AJAX Call (20 mins)
 
   Hooks (3 hours)
   Unit Testing (2-2.5 hours)

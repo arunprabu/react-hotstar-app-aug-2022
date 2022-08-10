@@ -1,4 +1,5 @@
 import React from 'react';
+import Users from '../../containers/Users/Users';
 import applyStyles from '../../hoc/applyStyles';
 import Bye from './Bye';
 import Hello from './Hello';
@@ -14,6 +15,11 @@ const Concepts = () => {
       <h2>HOC | Demo</h2>
       <StyledHello name="Steve"></StyledHello>
       <StyledBye name='Steve'></StyledBye>
+
+      <hr/>
+      <h2>AJAX Call | Demo</h2>
+
+      <Users />
     </div>
   )
 }

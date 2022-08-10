@@ -3,6 +3,7 @@ import LifeCycleDemo from '../../containers/LifeCycleDemo/LifeCycleDemo';
 import MyProfile from '../../containers/MyProfile/MyProfile';
 import RecentMovieList from '../../containers/RecentMovieList/RecentMovieList';
 import TrendingShowList from '../../containers/TrendingShowList/TrendingShowList';
+import Users from '../../containers/Users/Users';
 import LastLogin from '../LastLogin/LastLogin';
 import Program from './Program/Program';
 import Subscription from './Subscription/Subscription';
@@ -80,7 +81,7 @@ const Home = () => {
       <LifeCycleDemo/>
 
       <hr/>
-      <h2>Last Login</h2>
+      <h2>Last Login | Fragment-like implementation</h2>
       <LastLogin>
         <p>Last Login 1: </p>
       </LastLogin>
@@ -88,6 +89,7 @@ const Home = () => {
       <LastLogin>
         <p>Last Login 2: </p>
       </LastLogin>
+
     </>
   )
 }
