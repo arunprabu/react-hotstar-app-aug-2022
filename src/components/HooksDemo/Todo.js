@@ -3,9 +3,11 @@ import React, { useRef } from 'react'
 const Todo = () => {
 
   // creating a ref for the input field -- to capture the form input value
-  const todoInput = useRef('');
+  const todoInput = useRef('test');
+  console.log(todoInput.current); // test
 
   const handleAddTodo = () => {
+    console.log(todoInput.current);
     console.log(todoInput.current.value);
 
     // hit the rest api 
