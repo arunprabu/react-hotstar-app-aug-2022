@@ -6,9 +6,5 @@
 6. TODO: Complete RecentMovieList with Child Comp 
 7. TODO: Work on Render props and child to parent comp commn 
   in RecentMovieList and its' child comp 
-
-
-
-
-
+8. TODO: Loop thru to show the contacts loading over AJAX in users comp 
 

@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Concepts from './components/Concepts/Concepts';
 import About from './components/About/About';
+import HooksDemo from './components/HooksDemo/HooksDemo';
 
 // App Component 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/concepts' element={<Concepts />} />
             <Route path='/about' element={<About />} />
+            <Route path='/hooks' element={<HooksDemo />} />
             {/* TODO: learn about 404 */}
           </Routes>
         </div>

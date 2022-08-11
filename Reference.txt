@@ -233,10 +233,8 @@ Agenda
   build
   Deployment 
   
-  Unit Testing (2-2.5 hours)
 
-  Redux (1 hour)
+  Unit Testing (1 hour)
 
-  
-
-  --
+  Redux (2 hour)
+--
