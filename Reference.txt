@@ -228,13 +228,10 @@ Step 5:
 Agenda
 -- 
 
-  Hooks (3 hours)
+  
+  Error Boundaries
   Lazy Loading 
   build
   Deployment 
+
   
-
-  Unit Testing (1 hour)
-
-  Redux (2 hour)
---

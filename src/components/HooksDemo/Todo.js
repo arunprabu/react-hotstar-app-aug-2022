@@ -1,4 +1,4 @@
-import React, { useRef, useReducer } from 'react'
+import React, { useRef, useReducer, useEffect } from 'react'
 import todoReducer from '../../reducers/todoReducer';
 
 const Todo = () => {
@@ -18,7 +18,7 @@ const Todo = () => {
     // hit the rest api 
     // save the data
     // get the response 
-    
+
     todoDispatch({
       type: 'ADD_TODO',
       payload: todoInput.current.value //send the response data as payload 

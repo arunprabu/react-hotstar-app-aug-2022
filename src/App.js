@@ -8,6 +8,7 @@ import Home from './components/Home/Home';
 import Concepts from './components/Concepts/Concepts';
 import About from './components/About/About';
 import HooksDemo from './components/HooksDemo/HooksDemo';
+import ContextDemo from './components/ContextDemo/ContextDemo';
 
 // App Component 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path='/concepts' element={<Concepts />} />
             <Route path='/about' element={<About />} />
             <Route path='/hooks' element={<HooksDemo />} />
+            <Route path='/products' element={<ContextDemo />} />
             {/* TODO: learn about 404 */}
           </Routes>
         </div>

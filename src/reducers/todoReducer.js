@@ -8,7 +8,6 @@
 
 
 const todoReducer = ( state = [], action) => {
-  debugger;
   console.log('Inside todoReducer');
 
   switch(action.type){

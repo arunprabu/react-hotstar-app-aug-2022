@@ -18,6 +18,9 @@ const Menu = ( props ) => {
       <li className="nav-item">
         <NavLink className="nav-link" to="/hooks">React Hooks</NavLink>
       </li>
+      <li className="nav-item">
+        <NavLink className="nav-link" to="/products">Products (Context API Demo)</NavLink>
+      </li>
     </ul>
   )
 }
