@@ -253,8 +253,7 @@ Context API - Steps
 Agenda
 -- 
 
-  
-  Error Boundaries
+
   Lazy Loading 
   build
   Deployment 
