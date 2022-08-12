@@ -2,10 +2,16 @@
   import, fn defn with JSX, export 
 */
 // Functional Component with Named Function
-import React from 'react';
+import React, { useContext } from 'react';
+import { CartContext } from '../../contexts/CartContext';
 import Menu from '../Menu/Menu';
 
 function Header() {
+
+  // let's subscribe to the CartContext using useContext
+  const cartData = useContext(CartContext);
+  console.log(cartData);
+
   // Returning JSX
   return (
     <header>
@@ -18,6 +24,8 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <Menu/>
           </div>
+          
+          <button className='btn btn-danger'>Cart({cartData?.cartState?.length | 0})</button>
         </div>
       </nav>
     </header>
