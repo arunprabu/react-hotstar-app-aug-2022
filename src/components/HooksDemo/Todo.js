@@ -1,20 +1,38 @@
-import React, { useRef } from 'react'
+import React, { useRef, useReducer } from 'react'
+import todoReducer from '../../reducers/todoReducer';
 
 const Todo = () => {
-
+  console.log('Program Started');
   // creating a ref for the input field -- to capture the form input value
   const todoInput = useRef('test');
   console.log(todoInput.current); // test
+  // useReducer will get reducer as input and 
+  // will return a array with state and dispatcher fn
+  const [ todoState, todoDispatch] = useReducer(todoReducer);
+  console.log(todoState);
+  console.log(todoDispatch);
 
   const handleAddTodo = () => {
-    console.log(todoInput.current);
     console.log(todoInput.current.value);
 
     // hit the rest api 
     // save the data
     // get the response 
     
-    // update the UI 
+    todoDispatch({
+      type: 'ADD_TODO',
+      payload: todoInput.current.value //send the response data as payload 
+    });
+
+  }
+
+  let todoList = null;
+  if(todoState && todoState.length >0){
+    todoList = todoState.map( (todo, index) => {
+      return(
+        <li className='list-group-item' key={index}>{todo}</li>
+      )
+    })
   }
 
   return (
@@ -32,11 +50,14 @@ const Todo = () => {
         </div>
         
         <ul className='list-group'>
-          <li className='list-group-item'>Todo number 1</li>
-          <li className='list-group-item'>Todo number 2</li>
-          <li className='alert alert-danger'>
-            No Todos Found. You can add one!
-          </li> 
+          { 
+            todoState && todoState.length > 0? 
+            todoList
+            :
+            <li className='alert alert-danger'>
+              No Todos Found. You can add one!
+            </li> 
+          }
         </ul>
       </div>
     </div>
